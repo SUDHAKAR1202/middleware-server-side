@@ -20,6 +20,10 @@ app.post('/submit', (req, res) => {
 }
 );
 
+app.get('/', (req, res) => {
+    console.log("Server is running");
+})
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 })
