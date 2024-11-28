@@ -21,7 +21,7 @@ app.post('/submit', (req, res) => {
 );
 
 app.get('/', (req, res) => {
-    console.log("Server is running");
+   res.send("Server is running");
 })
 
 app.listen(port, () => {
